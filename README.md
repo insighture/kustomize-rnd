@@ -20,3 +20,7 @@ Comment out the deployment you don't want to deploy in
 
 * prune the deployment you don't want to deploy
     * `kustomize build overlays/dev | KUBECTL_APPLYSET=true kubectl apply -f - --prune --applyset=sample --namespace default`
+
+
+## Demo
+![demo](assets/Screenshot.png)
