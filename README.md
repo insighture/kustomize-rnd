@@ -1,6 +1,8 @@
 ## Create Both Deployments
 
 * `kustomize build overlays/dev |   kubectl apply -f -`
+  or in lower versions of k8s
+* `kustomize build overlays/dev | KUBECTL_APPLYSET=true kubectl apply -f - --prune --applyset=sample --namespace default`
 
 
 ## Remove One Deployment
